@@ -85,26 +85,6 @@ $(document).ready(function () {
     if (screen.width >= 900) switchButton();
   });
 
-  // generate text in input
-  // function textGenerate() {
-  //   var n = "";
-  //   var text = " " + textConfig.text9;
-  //   var a = Array.from(text);
-  //   var textVal = $("#txtReason").val() ? $("#txtReason").val() : "";
-  //   var count = textVal.length;
-  //   if (count > 0) {
-  //     for (let i = 1; i <= count; i++) {
-  //       n = n + a[i];
-  //       if (i == text.length + 1) {
-  //         $("#txtReason").val("");
-  //         n = "";
-  //         break;
-  //       }
-  //     }
-  //   }
-  //   $("#txtReason").val(n);
-  // }
-
   // show popup
   $("#yes").click(function () {
     var audio = new Audio("sound/tick.mp3");
@@ -116,12 +96,6 @@ $(document).ready(function () {
       padding: "3em",
       html: "<input type='text' class='form-control' id='txtReason'  placeholder='Whyyy'>",
       background: '#fff url("img/iput-bg.jpg")',
-      backdrop: `
-                    rgba(0,0,123,0.4)
-                    url("img/giphy2.gif")
-                    left top
-                    no-repeat
-                  `,
       showCancelButton: false,
       confirmButtonColor: "#3085d6",
       cancelButtonColor: "#d33",
